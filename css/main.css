@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Chillax-Semibold";
+  src: url("../fonts/Chillax-Semibold.woff2") format("woff2"),
+    url("../fonts/Chillax-Semibold.woff") format("woff"),
+    url("../fonts/Chillax-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  background-color: rgb(254, 246, 232);
+  font-family: "Roboto", sans-serif;
+}
+
+.wrap {
+  margin: 2em;
+  max-height: 100vh;
+}
+
+main {
+  margin: 5em 2em;
+  padding-left: 0.75em;
+  border-left: 5px double rgb(91, 234, 136);
+}
+
+main h1 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75em;
+}
+
+main p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 0.75em;
+  margin-top: 5em;
+}
+
+footer span {
+  border-top: 2px rgba(45, 45, 45, 0.572) solid;
+  width: 200px;
+}
+
+footer p {
+  background-color: rgba(45, 45, 45, 0.572);
+  color: rgb(91, 234, 136);
+  padding: 0.15em;
+}
+
+ul li {
+  list-style: none;
+  padding: 0;
+}
+
+ul a {
+  /* font-family: "Boska-Bold", serif; */
+  font-family: "Chillax-Semibold", san-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 2.5rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+ul a::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: -3px;
+  background-color: rgba(45, 45, 45, 0.572);
+  transition: width 0.5s ease-in-out;
+}
+
+ul a:hover::before {
+  width: 50%;
+}
+
+@media (min-width: 900px) {
+  .wrap {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+
+  .flex {
+    margin-top: 25em;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  main {
+    width: 30%;
+    margin: 0.75em 2em;
+    padding-left: 1em;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  main p {
+    font-size: 1.25rem;
+  }
+
+  ul a {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrap {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .flex {
+    justify-content: space-between;
+  }
+
+  main h1 {
+    font-size: 1.85rem;
+  }
+
+  main p {
+    font-size: 1.6rem;
+  }
+
+  ul a {
+    font-size: 5.5rem;
+  }
+}
