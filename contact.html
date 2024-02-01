@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="wrap">
-      <h1>Contact</h1>
-      <i class="fa-solid fa-bars fa-2xl" id="menu"></i>
-      <div class="flex">
-        <nav>
-          <i class="fa-solid fa-minus fa-2xl" id="close"></i>
-          <ul>
-            <li>
-              <a href="index.html"><span></span>Home</a>
-            </li>
-            <li>
-              <a href="assignments.html"><span></span>Assignments</a>
-            </li>
-            <li>
-              <a href="contact.html" class="hide-link"><span></span>Contact</a>
-            </li>
-          </ul>
-        </nav>
 
-        <form action="mailto:jzhan120@mail.ccsf.edu" method="post" enctype="text/plain">
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname" /><br /><br />
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname" /><br /><br />
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" cols="20" rows="10"></textarea><br /><br />
-          <input type="reset" value="Reset" class="button left" />
-          <input type="submit" value="Submit" class="button right" />
-        </form>
-      </div>
-      <footer>
-        <span></span>
-        <p>©/2024</p>
-      </footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Contact</h1>
+        <i class="fa-solid fa-bars fa-2xl" id="menu"></i>
+        <div class="flex">
+            <nav>
+                <i class="fa-solid fa-minus fa-2xl" id="close"></i>
+                <ul>
+                    <li>
+                        <a href="index.html"><span></span>Home</a>
+                    </li>
+                    <li>
+                        <a href="assignments.html"><span></span>Assignments</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="hide-link"><span></span>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form action="mailto:jzhan120@mail.ccsf.edu" method="post" enctype="text/plain">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="20" rows="10"></textarea><br><br>
+                <input type="reset" value="Reset" class="button left">
+                <input type="submit" value="Submit" class="button right">
+            </form>
+        </div>
+        <footer>
+            <span></span>
+            <p>©/2024</p>
+        </footer>
     </div>
 
     <script src="script/script.js"></script>
-  </body>
+</body>
+
 </html>
