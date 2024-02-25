@@ -13,9 +13,10 @@
 
       gtag("config", "G-WVRZ0TLNWS");
     </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignments</title>
+    <title>Working with Images</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,10 +29,9 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
     <div class="wrap">
-      <h1>Assignments</h1>
+      <h1>Working with Images</h1>
       <i class="fa-solid fa-bars fa-2xl" id="menu"></i>
       <div class="flex">
         <nav>
@@ -49,9 +49,30 @@
           </ul>
         </nav>
         <main>
-          <h2><a href="workingWithImages.html">Working with images</a></h2>
+          <figure>
+            <img src="images/nightView.jpg" alt="Night view of San Francisco." />
+            <figcaption>
+              Downtown San Francisco <br />Width: 4032px, height: 3024px, file size: 3.3MB
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/jpeg-optimizer-nightView.jpg"
+              alt="Optimized version of night view of San Francisco."
+            />
+            <figcaption>
+              Downtown San Francisco <br />
+              Width: 4032px, height: 3024px, file size: 2.1MB <br />Quality: 65%
+            </figcaption>
+          </figure>
           <br />
-          <img class="arrow" src="images/arrow.svg" alt="arrow sign" />
+          <h3>
+            The tool used to optimize the image:
+            <a href="https://jpeg-optimizer.com" target="_blank" rel="noopener noreferrer"
+              >Jpeg Optimizer</a
+            >
+          </h3>
+          <p>The original image takes 189ms to load and the optimized image takes 140ms.</p>
         </main>
       </div>
       <footer>

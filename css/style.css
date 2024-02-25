@@ -111,6 +111,12 @@ ul a:hover::before {
   width: 50%;
 }
 
+figure img {
+  width: 100%;
+  padding-top: 3em;
+  padding-right: 2em;
+}
+
 form {
   margin-top: 5em;
   text-align: center;
@@ -137,6 +143,7 @@ footer {
   align-items: center;
   gap: 0.75em;
   margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 footer span {
@@ -197,6 +204,17 @@ footer p {
 
   .hide-link {
     display: none;
+  }
+}
+
+/* main {
+  float: left;
+} */
+
+@media (min-width: 900px) {
+  .flex {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
