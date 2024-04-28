@@ -1,60 +1,73 @@
 * {
-  background-color: #c0deed;
+    background-color: #c0deed;
+}
+
+h1 {
+    z-index: 1;
+    position: absolute;
+    background: transparent;
+    text-align: center;
+    margin: 1em auto;
+    width: 100%;
+    font-size: 2.5rem;
 }
 
 #sky {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-  background-color: #c0deed;
-  background: url(clouds.png) center top repeat-x;
-  padding-top: 300px;
-  padding-bottom: 10px;
-  animation: moveclouds linear 25s infinite;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #c0deed;
+    background: url(clouds.png) center top repeat-x;
+    padding-top: 300px;
+    padding-bottom: 10px;
+    animation: moveclouds linear 25s infinite;
 }
 
 .banner {
-  text-transform: uppercase;
-  animation: banner linear 8s forwards;
-  width: 500px;
-  position: absolute;
+    text-transform: uppercase;
+    animation: banner linear 8s forwards;
+    width: 500px;
+    position: absolute;
 }
 
 @keyframes moveclouds {
-  0% {
-    background-position: 2247px 0px;
-  }
-  100% {
-    background-position: 0px 0px;
-  }
+    0% {
+        background-position: 2247px 0px;
+    }
+
+    100% {
+        background-position: 0px 0px;
+    }
 }
 
 @keyframes banner {
-  0% {
-    left: -20%;
-    transform: scale(0.1);
-  }
-  50% {
-    left: calc(100% - 500px);
-    transform: scale(1);
-  }
+    0% {
+        left: -20%;
+        transform: scale(0.1);
+    }
 
-  100% {
-    left: calc(50% - 250px);
-    transform: scale(1.2);
-  }
+    50% {
+        left: calc(100% - 500px);
+        transform: scale(1);
+    }
+
+    100% {
+        left: calc(50% - 250px);
+        transform: scale(1.2);
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  #sky {
-    animation: none;
-  }
-  h1 {
-    animation: none;
-  }
+    #sky {
+        animation: none;
+    }
+
+    h2 {
+        animation: none;
+    }
 }
