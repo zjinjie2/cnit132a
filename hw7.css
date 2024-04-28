@@ -3,12 +3,11 @@
 }
 
 h1 {
-    z-index: 1;
-    position: absolute;
+    z-index: 9;
+    position: relative;
     background: transparent;
     text-align: center;
     margin: 1em auto;
-    width: 100%;
     font-size: 2.5rem;
 }
 
@@ -28,10 +27,11 @@ h1 {
     animation: moveclouds linear 25s infinite;
 }
 
+
 .banner {
     text-transform: uppercase;
     animation: banner linear 8s forwards;
-    width: 500px;
+    width: 400px;
     position: absolute;
 }
 
@@ -52,12 +52,12 @@ h1 {
     }
 
     50% {
-        left: calc(100% - 500px);
+        left: calc(100% - 400px);
         transform: scale(1);
     }
 
     100% {
-        left: calc(50% - 250px);
+        left: calc(50% - 200px);
         transform: scale(1.2);
     }
 }
@@ -67,7 +67,8 @@ h1 {
         animation: none;
     }
 
-    h2 {
+    .banner {
         animation: none;
+        width: 100%;
     }
 }
