@@ -2,36 +2,24 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVRZ0TLNWS"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "G-WVRZ0TLNWS");
-
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <meta name="description" content="Contact page - front end developer - Jin Zhang">
+    <meta name="description" content="Web portfolio website by Jin Zhang - Report Analysis for website portfolio page">
     <meta property="og:title" content="Jin Zhang - Front end developer">
     <meta property="og:url" content="https://zjinjie2.github.io/cnit132a/index.html">
-    <meta property="og:description" content="Contact page - front end developer - Jin Zhang">
+    <meta property="og:description" content="Web portfolio website by Jin Zhang - front end developer">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <title>Final Analytics Report Analysis</title>
 </head>
 
 <body>
     <div class="wrap">
-        <h1>Contact this front end developer</h1>
+        <h1>Report Analysis for website portfolio page</h1>
         <i class="fa-solid fa-bars fa-2xl" id="menu"></i>
         <div class="flex">
             <nav>
@@ -48,24 +36,26 @@
                     </li>
                 </ul>
             </nav>
-
-            <form action="mailto:jzhan120@mail.ccsf.edu" method="post" enctype="text/plain">
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="20" rows="10"></textarea><br><br>
-                <input type="reset" value="Reset" class="button left">
-                <input type="submit" value="Submit" class="button right">
-            </form>
+            <main>
+                <img src="report.jpg" alt="Google Analytics report of front end developer, Jin Zhang's web portfolio website" style="width: 90%">
+                <br>
+                <a href="report.pdf" target="_blank" rel="noopener noreferrer">Click here to open the pdf form of the report</a>
+                <p style="width: 70%">
+                    This Google Analytics report looks at how people are using this site from February 14 to
+                    May 13, 2024. Some parts of the site, like the home page, and "Assignments" are really
+                    popular, and get a lot of attention. People spend a lot of time there, and they keep
+                    coming back. But other part, like "Contact" is not as popular. To make the site better,
+                    maybe try making the less popular part more interesting and asking users what they like.
+                    By keeping an eye on how much time people spend and how often they visit, the site can
+                    be made better for everyone.
+                </p>
+            </main>
         </div>
         <footer>
             <span></span>
             <p>©/2024</p>
         </footer>
     </div>
-
     <script src="script/script.js"></script>
 </body>
 
